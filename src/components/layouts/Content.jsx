@@ -3,7 +3,7 @@ import React from 'react'
 
 const Content = props => (
     <main className='Content'>
-        Componente Menu
+        Componente Content
     </main>
 )
 
