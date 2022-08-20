@@ -1,10 +1,18 @@
-import './Content.css'
-import React from 'react'
+import "./Content.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom"; // para navegações
 
-const Content = props => (
-    <main className='Content'>
-        Componente Content
-    </main>
-)
+import Home from "../../views/examples/Home";
+import About from "../../views/examples/About";
 
-export default Content
+const Content = (props) => (
+  <main className="Content">
+    <Routes>
+      <Route path="/about" element={<About />} />
+
+      <Route path="/" exact element={<Home />} />
+    </Routes>
+  </main>
+);
+
+export default Content;
